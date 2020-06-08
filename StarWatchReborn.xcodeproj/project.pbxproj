@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CC4F895248E7CF90097653F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4F894248E7CF90097653F /* HomeView.swift */; };
+		0CC4F897248E7D0A0097653F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4F896248E7D0A0097653F /* ProfileView.swift */; };
+		0CC4F899248E7D190097653F /* QRcodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4F898248E7D190097653F /* QRcodeView.swift */; };
+		0CC4F89B248E7D430097653F /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4F89A248E7D430097653F /* ContactListView.swift */; };
+		0CC4F89E248E7D850097653F /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4F89D248E7D850097653F /* TabBar.swift */; };
 		80C98E61248662B1004EB543 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C98E60248662B1004EB543 /* AppDelegate.swift */; };
 		80C98E63248662B1004EB543 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C98E62248662B1004EB543 /* SceneDelegate.swift */; };
 		80C98E65248662B1004EB543 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C98E64248662B1004EB543 /* ContentView.swift */; };
@@ -36,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CC4F894248E7CF90097653F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0CC4F896248E7D0A0097653F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		0CC4F898248E7D190097653F /* QRcodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRcodeView.swift; sourceTree = "<group>"; };
+		0CC4F89A248E7D430097653F /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
+		0CC4F89D248E7D850097653F /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		80C98E5D248662B1004EB543 /* StarWatchReborn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWatchReborn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C98E60248662B1004EB543 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80C98E62248662B1004EB543 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +88,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CC4F893248E7CD60097653F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0CC4F894248E7CF90097653F /* HomeView.swift */,
+				0CC4F896248E7D0A0097653F /* ProfileView.swift */,
+				0CC4F898248E7D190097653F /* QRcodeView.swift */,
+				0CC4F89A248E7D430097653F /* ContactListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0CC4F89C248E7D660097653F /* SharedViews */ = {
+			isa = PBXGroup;
+			children = (
+				0CC4F89D248E7D850097653F /* TabBar.swift */,
+			);
+			path = SharedViews;
+			sourceTree = "<group>";
+		};
 		80C98E54248662B1004EB543 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +133,8 @@
 			children = (
 				80C98E60248662B1004EB543 /* AppDelegate.swift */,
 				80C98E62248662B1004EB543 /* SceneDelegate.swift */,
+				0CC4F893248E7CD60097653F /* Views */,
+				0CC4F89C248E7D660097653F /* SharedViews */,
 				80C98E64248662B1004EB543 /* ContentView.swift */,
 				80C98E66248662B3004EB543 /* Assets.xcassets */,
 				80C98E6B248662B3004EB543 /* LaunchScreen.storyboard */,
@@ -272,7 +303,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				80C98E61248662B1004EB543 /* AppDelegate.swift in Sources */,
+				0CC4F89B248E7D430097653F /* ContactListView.swift in Sources */,
+				0CC4F895248E7CF90097653F /* HomeView.swift in Sources */,
+				0CC4F89E248E7D850097653F /* TabBar.swift in Sources */,
+				0CC4F897248E7D0A0097653F /* ProfileView.swift in Sources */,
 				80C98E63248662B1004EB543 /* SceneDelegate.swift in Sources */,
+				0CC4F899248E7D190097653F /* QRcodeView.swift in Sources */,
 				80C98E65248662B1004EB543 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
