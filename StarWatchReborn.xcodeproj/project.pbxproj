@@ -12,6 +12,7 @@
 		0CC4F899248E7D190097653F /* QRcodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4F898248E7D190097653F /* QRcodeView.swift */; };
 		0CC4F89B248E7D430097653F /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4F89A248E7D430097653F /* ContactListView.swift */; };
 		0CC4F89E248E7D850097653F /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4F89D248E7D850097653F /* TabBar.swift */; };
+		0CDB8DAA248FE98C004B11B7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDB8DA9248FE98C004B11B7 /* Colors.swift */; };
 		80C98E61248662B1004EB543 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C98E60248662B1004EB543 /* AppDelegate.swift */; };
 		80C98E63248662B1004EB543 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C98E62248662B1004EB543 /* SceneDelegate.swift */; };
 		80C98E65248662B1004EB543 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C98E64248662B1004EB543 /* ContentView.swift */; };
@@ -46,6 +47,7 @@
 		0CC4F898248E7D190097653F /* QRcodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRcodeView.swift; sourceTree = "<group>"; };
 		0CC4F89A248E7D430097653F /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
 		0CC4F89D248E7D850097653F /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		0CDB8DA9248FE98C004B11B7 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		80C98E5D248662B1004EB543 /* StarWatchReborn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWatchReborn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C98E60248662B1004EB543 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80C98E62248662B1004EB543 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				0CC4F89D248E7D850097653F /* TabBar.swift */,
+				0CDB8DA9248FE98C004B11B7 /* Colors.swift */,
 			);
 			path = SharedViews;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80C98E61248662B1004EB543 /* AppDelegate.swift in Sources */,
+				0CDB8DAA248FE98C004B11B7 /* Colors.swift in Sources */,
 				0CC4F89B248E7D430097653F /* ContactListView.swift in Sources */,
 				0CC4F895248E7CF90097653F /* HomeView.swift in Sources */,
 				0CC4F89E248E7D850097653F /* TabBar.swift in Sources */,

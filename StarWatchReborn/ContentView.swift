@@ -11,17 +11,19 @@ import SwiftUI
 struct ContentView: View {
     
     @State var index = 0
+    var pageName = [ "Home", "Profile", "Qr Code", "Contacts" ]
     
     var body : some View{
         
         ZStack{
+            CustomColor.blueMiddle
+                .edgesIgnoringSafeArea(.all)
             
             VStack{
                 
-                Color.blue
-            }
-            
-            VStack{
+                Text("\(pageName[index])")
+                    .font(Font.system(size: 18, weight: .semibold))
+                    .foregroundColor(CustomColor.orangeDark)
                 
                 ZStack{
                     
@@ -33,13 +35,14 @@ struct ContentView: View {
                     
                     ContactListView().opacity(self.index == 3 ? 1 : 0)
                 }
-                .background(Color.green)
+                .background(
+                    RoundedRectangle(cornerRadius: 30)
+                        .foregroundColor(CustomColor.blueDark))
                 
                 TabBar(index: self.$index)
-                
             }
+            
         }
-        .edgesIgnoringSafeArea(.all)
     }
 }
 
@@ -48,16 +51,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

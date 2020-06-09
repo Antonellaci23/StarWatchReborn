@@ -20,35 +20,36 @@ struct TabBar : View {
             
             Button(action: { self.index = 0 }) {
                 Image(systemName: "gear")
-                    .foregroundColor(self.index == 0 ? Color.white : Color.white.opacity(0.5))
+                    .foregroundColor(self.index == 0 ? CustomColor.orangeDark : CustomColor.orangeLight)
             }
             
             Spacer()
             
             Button(action: { self.index = 1 }) {
                 Image(systemName: "person")
-                    .foregroundColor(self.index == 1 ? Color.white : Color.white.opacity(0.5))
+                    .foregroundColor(self.index == 1 ? CustomColor.orangeDark : CustomColor.orangeLight)
             }
             
             Spacer()
             
             Button(action: { self.index = 2 }) {
                 Image(systemName: "qrcode")
-                    .foregroundColor(self.index == 2 ? Color.white : Color.white.opacity(0.5))
+                    .foregroundColor(self.index == 2 ? CustomColor.orangeDark : CustomColor.orangeLight)
             }
             
             Spacer()
             
             Button(action: { self.index = 3 }) {
                 Image(systemName: "rectangle.stack.person.crop")
-                    .foregroundColor(self.index == 3 ? Color.white : Color.white.opacity(0.5))
+                    .foregroundColor(self.index == 3 ? CustomColor.orangeDark : CustomColor.orangeLight)
             }
             
             Spacer()
             
         }
-        .padding(.top, 20)
-        .padding(.bottom, UIApplication.shared.windows.first?.safeAreaInsets.bottom)
+        .font(Font.system(size: 25))
+        .padding(.vertical, 15)
+//        .padding(.bottom, UIApplication.shared.windows.first?.safeAreaInsets.bottom)
     }
 }
 
