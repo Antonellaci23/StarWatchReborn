@@ -10,8 +10,8 @@ import SwiftUI
 
 struct QRcodeView: View {
     var body: some View {
-        GeometryReader{_ in
-            VStack{
+        GeometryReader { _ in
+            VStack {
                 Text("QRcodeView")
             }
         }
