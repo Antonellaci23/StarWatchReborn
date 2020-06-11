@@ -14,7 +14,7 @@ struct ContentView: View {
     var pageName = [ "Home", "Profile", "Qr Code", "Contacts" ]
     
     var body : some View{
-        
+//        NavigationView {
         ZStack{
             CustomColor.blueMiddle
                 .edgesIgnoringSafeArea(.all)
@@ -43,6 +43,8 @@ struct ContentView: View {
             }
             
         }
+//        .navigationBarHidden(true)
+//        }
     }
 }
 

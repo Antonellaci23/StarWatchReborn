@@ -12,20 +12,16 @@ struct CardView : View {
     
     var data : Card
     
-    var body : some View{
+    var body : some View {
         
         VStack {
             
             Image(data.img)
             
-            HStack (spacing: 5) {
-                Text(data.name)
-                Text(data.surname)
-            }
-            .font(Font.system(size: 16, weight: .bold))
-            .foregroundColor(CustomColor.orangeVeryLight)
-            .padding(.vertical, 13)
+            Text("\(data.name) \(data.surname)")
+                .font(Font.system(size: 20, weight: .bold))
         }
+        .foregroundColor(CustomColor.orangeVeryLight)
         .frame(width: UIScreen.main.bounds.width - 30, height: data.show ? 550 : 440)
         .background(CustomColor.blueMiddle)
         .cornerRadius(20)
@@ -41,16 +37,26 @@ struct ListView : View {
         
         VStack {
             
-            Image(data.img)
-            
             HStack (spacing: 5) {
-                Text(data.name)
-                Text(data.surname)
-                    .fontWeight(.bold)
-                    .padding(.vertical, 13)
+                Image(data.img)
+                    .resizable()
+                    .renderingMode(.original)
+                    .frame(width: 45, height: 45)
+                    .aspectRatio(contentMode: .fill)
+                    .padding(.horizontal, 20)
+                
+                Text("\(data.name) \(data.surname)")
+                    .font(Font.system(size: 20, weight: .bold))
+                
+                Spacer()
+                
+                Image(systemName: "chevron.right")
+                    .padding(.horizontal, 20)
+                    .foregroundColor(CustomColor.orangeMiddle)
             }
+            .foregroundColor(CustomColor.orangeVeryLight)
         }
-        .frame(width: UIScreen.main.bounds.width - 30, height: 100)
+        .frame(width: UIScreen.main.bounds.width - 30, height: 50)
         .background(CustomColor.blueMiddle)
         .cornerRadius(20)
         .shadow(radius: 5)
@@ -68,4 +74,14 @@ struct Card : Identifiable {
     var instagram: String
     var linkedin: String
     var show : Bool = false
+}
+
+struct CardView_Previews: PreviewProvider {
+    static var previews: some View {
+        VStack {
+        CardView(data: Card(id: 1, name: "Mirella", surname: "Cetronio", tel: 3333333333, email: "mail@mail.it", facebook: "link to fb", instagram: "instagram", linkedin: "linkedin"))
+        
+        ListView(data: Card(id: 1, name: "Mirella", surname: "Cetronio", tel: 3333333333, email: "mail@mail.it", facebook: "link to fb", instagram: "instagram", linkedin: "linkedin"))
+        }
+    }
 }
