@@ -15,6 +15,9 @@
 		0CC4F89B248E7D430097653F /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4F89A248E7D430097653F /* ContactListView.swift */; };
 		0CC4F89E248E7D850097653F /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4F89D248E7D850097653F /* TabBar.swift */; };
 		0CDB8DAA248FE98C004B11B7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDB8DA9248FE98C004B11B7 /* Colors.swift */; };
+		80C4F60224915F5C00C5B0CC /* CellAddProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C4F60124915F5C00C5B0CC /* CellAddProfile.swift */; };
+		80C4F604249160AF00C5B0CC /* TextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C4F603249160AF00C5B0CC /* TextFields.swift */; };
+		80C4F6062491696500C5B0CC /* AddProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C4F6052491696500C5B0CC /* AddProfile.swift */; };
 		80C98E61248662B1004EB543 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C98E60248662B1004EB543 /* AppDelegate.swift */; };
 		80C98E63248662B1004EB543 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C98E62248662B1004EB543 /* SceneDelegate.swift */; };
 		80C98E65248662B1004EB543 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C98E64248662B1004EB543 /* ContentView.swift */; };
@@ -52,6 +55,9 @@
 		0CC4F89A248E7D430097653F /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
 		0CC4F89D248E7D850097653F /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		0CDB8DA9248FE98C004B11B7 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		80C4F60124915F5C00C5B0CC /* CellAddProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellAddProfile.swift; sourceTree = "<group>"; };
+		80C4F603249160AF00C5B0CC /* TextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFields.swift; sourceTree = "<group>"; };
+		80C4F6052491696500C5B0CC /* AddProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProfile.swift; sourceTree = "<group>"; };
 		80C98E5D248662B1004EB543 /* StarWatchReborn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWatchReborn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C98E60248662B1004EB543 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80C98E62248662B1004EB543 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +108,8 @@
 				0CC4F898248E7D190097653F /* QRcodeView.swift */,
 				0CC4F89A248E7D430097653F /* ContactListView.swift */,
 				0C8B41D724905115002C24B5 /* CardListView.swift */,
+				80C4F60124915F5C00C5B0CC /* CellAddProfile.swift */,
+				80C4F6052491696500C5B0CC /* AddProfile.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -112,6 +120,7 @@
 				0CC4F89D248E7D850097653F /* TabBar.swift */,
 				0C8B41D92490544D002C24B5 /* CardView.swift */,
 				0CDB8DA9248FE98C004B11B7 /* Colors.swift */,
+				80C4F603249160AF00C5B0CC /* TextFields.swift */,
 			);
 			path = SharedViews;
 			sourceTree = "<group>";
@@ -316,12 +325,15 @@
 				0C8B41D824905115002C24B5 /* CardListView.swift in Sources */,
 				0CC4F89B248E7D430097653F /* ContactListView.swift in Sources */,
 				0CC4F895248E7CF90097653F /* HomeView.swift in Sources */,
+				80C4F60224915F5C00C5B0CC /* CellAddProfile.swift in Sources */,
 				0CC4F89E248E7D850097653F /* TabBar.swift in Sources */,
 				0CC4F897248E7D0A0097653F /* ProfileView.swift in Sources */,
 				80C98E63248662B1004EB543 /* SceneDelegate.swift in Sources */,
+				80C4F604249160AF00C5B0CC /* TextFields.swift in Sources */,
 				0CC4F899248E7D190097653F /* QRcodeView.swift in Sources */,
 				0C8B41DA2490544D002C24B5 /* CardView.swift in Sources */,
 				80C98E65248662B1004EB543 /* ContentView.swift in Sources */,
+				80C4F6062491696500C5B0CC /* AddProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,15 +499,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"StarWatchReborn/Preview Content\"";
-				DEVELOPMENT_TEAM = T5SH5WWN5F;
+				DEVELOPMENT_TEAM = 22SRFN3JA2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = StarWatchReborn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = it.antonellacirma.StarWatchReborn;
+				PRODUCT_BUNDLE_IDENTIFIER = it.SWRebornProject.StarWatchReborn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -507,15 +520,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"StarWatchReborn/Preview Content\"";
-				DEVELOPMENT_TEAM = T5SH5WWN5F;
+				DEVELOPMENT_TEAM = 22SRFN3JA2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = StarWatchReborn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = it.antonellacirma.StarWatchReborn;
+				PRODUCT_BUNDLE_IDENTIFIER = it.SWRebornProject.StarWatchReborn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -10,10 +10,12 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        GeometryReader { _ in
-            VStack {
-                Text("HomeView")
-            }
-        }
+    CellAddProfile()
+    }
+}
+
+struct HomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeView()
     }
 }
