@@ -20,10 +20,12 @@ struct CellAddProfile: View {
     @State var facebook = ""
     @State var instagram = ""
     @State var linkedin = ""
+     @State var twitter = ""
     @State var string = "0"
     
     var body: some View {
         VStack {
+            ScrollView{
             HStack {
                 appTextField(placeholder: Text("Name"), text: $name)
                 Image(systemName: "person")
@@ -80,11 +82,22 @@ struct CellAddProfile: View {
             }.modifier(appTextFieldStyle(stroke: 1))
                 .padding(.horizontal, 32)
             
+            HStack {
+                appTextField(placeholder: Text("Twitter"), text: $twitter)
+                Image(systemName: "person.2")
+                
+            }.modifier(appTextFieldStyle(stroke: 1))
+                .padding(.horizontal, 32)
+            }
+            
             Button(action: {  let impactLight = UIImpactFeedbackGenerator(style: .light)
                 impactLight.impactOccurred()}) {
-                    Image("saveButton").renderingMode(.original).padding(.top, 90.0)
+                    Image("saveButton").renderingMode(.original)
             }
-        }
+        }.onAppear {
+            UITableView.appearance().separatorStyle = .none
+            
+        }.onDisappear {       UITableView.appearance().separatorStyle = .singleLine     }
     }
 }
 struct CellAddProfile_Previews: PreviewProvider {
