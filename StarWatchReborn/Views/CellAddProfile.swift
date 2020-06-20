@@ -88,12 +88,14 @@ struct CellAddProfile: View {
                 
             }.modifier(appTextFieldStyle(stroke: 1))
                 .padding(.horizontal, 32)
-            }
+            }   .padding(.top, 50.0)
             
             Button(action: {  let impactLight = UIImpactFeedbackGenerator(style: .light)
                 impactLight.impactOccurred()}) {
                     Image("saveButton").renderingMode(.original)
             }
+            .padding(.bottom)
+         
         }.onAppear {
             UITableView.appearance().separatorStyle = .none
             
