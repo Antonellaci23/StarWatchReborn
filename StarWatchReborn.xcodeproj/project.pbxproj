@@ -15,6 +15,7 @@
 		0CC4F89B248E7D430097653F /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4F89A248E7D430097653F /* ContactListView.swift */; };
 		0CC4F89E248E7D850097653F /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4F89D248E7D850097653F /* TabBar.swift */; };
 		0CDB8DAA248FE98C004B11B7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDB8DA9248FE98C004B11B7 /* Colors.swift */; };
+		80562E1E24A2576500344229 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80562E1D24A2576500344229 /* CloudKit.framework */; };
 		80C4F60224915F5C00C5B0CC /* CellAddProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C4F60124915F5C00C5B0CC /* CellAddProfile.swift */; };
 		80C4F604249160AF00C5B0CC /* TextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C4F603249160AF00C5B0CC /* TextFields.swift */; };
 		80C4F6062491696500C5B0CC /* AddProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C4F6052491696500C5B0CC /* AddProfile.swift */; };
@@ -55,6 +56,8 @@
 		0CC4F89A248E7D430097653F /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
 		0CC4F89D248E7D850097653F /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		0CDB8DA9248FE98C004B11B7 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		80562E1B24A2575500344229 /* StarWatchReborn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StarWatchReborn.entitlements; sourceTree = "<group>"; };
+		80562E1D24A2576500344229 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		80C4F60124915F5C00C5B0CC /* CellAddProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellAddProfile.swift; sourceTree = "<group>"; };
 		80C4F603249160AF00C5B0CC /* TextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFields.swift; sourceTree = "<group>"; };
 		80C4F6052491696500C5B0CC /* AddProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProfile.swift; sourceTree = "<group>"; };
@@ -80,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80562E1E24A2576500344229 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +129,14 @@
 			path = SharedViews;
 			sourceTree = "<group>";
 		};
+		80562E1C24A2576500344229 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80562E1D24A2576500344229 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		80C98E54248662B1004EB543 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +145,7 @@
 				80C98E76248662B3004EB543 /* StarWatchRebornTests */,
 				80C98E81248662B3004EB543 /* StarWatchRebornUITests */,
 				80C98E5E248662B1004EB543 /* Products */,
+				80562E1C24A2576500344229 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,6 +162,7 @@
 		80C98E5F248662B1004EB543 /* StarWatchReborn */ = {
 			isa = PBXGroup;
 			children = (
+				80562E1B24A2575500344229 /* StarWatchReborn.entitlements */,
 				80C98E60248662B1004EB543 /* AppDelegate.swift */,
 				80C98E62248662B1004EB543 /* SceneDelegate.swift */,
 				0CC4F893248E7CD60097653F /* Views */,
@@ -498,6 +512,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StarWatchReborn/StarWatchReborn.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"StarWatchReborn/Preview Content\"";
@@ -519,6 +534,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StarWatchReborn/StarWatchReborn.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"StarWatchReborn/Preview Content\"";
