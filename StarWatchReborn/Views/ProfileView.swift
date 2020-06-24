@@ -13,7 +13,7 @@ struct ProfileView: View {
 //        GeometryReader { _ in
 //            VStack {
 //                Text("ProfileView")
-        CardView(data: Card(id: 0, name: "Jill", surname: "boh", tel: 3333333, email: "ciao", facebook: "ciao", instagram: "ciao", linkedin:"ciao", show: true))
+        CardView(data: Card(id: UUID(), name: "Jill", surname: "boh", tel: 3333333, email: "ciao", facebook: "ciao", instagram: "ciao", linkedin:"ciao", show: true))
 //            }
 //        }
     }

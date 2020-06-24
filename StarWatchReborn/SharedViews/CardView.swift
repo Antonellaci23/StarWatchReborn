@@ -16,7 +16,7 @@ struct CardView : View {
         
         VStack {
             
-            Image(data.img)
+            Image(uiImage: data.img)
             
             Text("\(data.name) \(data.surname)")
                 .font(Font.system(size: 20, weight: .bold))
@@ -38,7 +38,7 @@ struct ListView : View {
         VStack {
             
             HStack (spacing: 5) {
-                Image(data.img)
+                Image(uiImage: data.img)
                     .resizable()
                     .renderingMode(.original)
                     .frame(width: 45, height: 45)
@@ -63,25 +63,14 @@ struct ListView : View {
     }
 }
 
-struct Card : Identifiable {
-    var id : Int
-    var img : String = "avatar"
-    var name : String
-    var surname : String
-    var tel : Int
-    var email: String
-    var facebook: String
-    var instagram: String
-    var linkedin: String
-    var show : Bool = false
-}
+
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-        CardView(data: Card(id: 1, name: "Mirella", surname: "Cetronio", tel: 3333333333, email: "mail@mail.it", facebook: "link to fb", instagram: "instagram", linkedin: "linkedin"))
+        CardView(data: Card(id: UUID(), name: "Mirella", surname: "Cetronio", tel: 3333333333, email: "mail@mail.it", facebook: "link to fb", instagram: "instagram", linkedin: "linkedin"))
         
-        ListView(data: Card(id: 1, name: "Mirella", surname: "Cetronio", tel: 3333333333, email: "mail@mail.it", facebook: "link to fb", instagram: "instagram", linkedin: "linkedin"))
+        ListView(data: Card(id: UUID(), name: "Mirella", surname: "Cetronio", tel: 3333333333, email: "mail@mail.it", facebook: "link to fb", instagram: "instagram", linkedin: "linkedin"))
         }
     }
 }
